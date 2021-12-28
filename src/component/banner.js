@@ -3,7 +3,8 @@
 const Banner =()=>{
     return(
         
-        <div className="demo">Hello</div>
+        <div className="demo">Hello world</div>
+      
          
     )
 }
