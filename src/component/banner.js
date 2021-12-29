@@ -16,7 +16,7 @@ const Banner =()=>{
                             <div className="round"></div>
                         </div>
                         <div className="overlay-button">
-                            <a href="#" class="view-button-banner circle link-unstyled">View</a>
+                            <a href="#" class="view-button-banner circle">View</a>
                         </div>
                     </div>
                     <div className='right-side aside-banner'>
