@@ -4,7 +4,7 @@
 const Profile =()=>{
     return(
         
-        <div className="demo">Hello</div>
+        <div className="demosss"></div>
          
     )
 }
