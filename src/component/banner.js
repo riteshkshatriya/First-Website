@@ -7,7 +7,7 @@ const Banner =()=>{
             <div className="container">
                 <div className="left-side aside-banner">
                     <div className="banner-content">
-                        <span>THE TECH ZONE</span>
+                        <span>THE TECH ZONE demo</span>
                     </div>
                 </div>
             </div>
