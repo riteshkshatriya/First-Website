@@ -3,8 +3,13 @@
 const Banner =()=>{
     return(
         
-        <section className="main-banner-section">
-            <div className="left-side aside-banner">
+        <section className="main-banner-section text-white">
+            <div className="container">
+                <div className="left-side aside-banner">
+                    <div className="banner-content">
+                        <span>THE TECH ZONE</span>
+                    </div>
+                </div>
             </div>
             <div className="right-side aside-banner">
             </div>

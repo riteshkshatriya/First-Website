@@ -11,15 +11,16 @@ body{
 
 
 /* Banner Css Start */
-.main-banner-section{position: relative;min-height: 100vh;display: flex;}
-.main-banner-section .aside-banner{width: 50%; }
-.main-banner-section .left-side{background-color: #000;}
+.main-banner-section{position: relative;min-height: 100vh;}
+.main-banner-section::before{content: ''; position: absolute;top: 0;left: 0;right: 0;width: 50%;background-color: #000;min-height: 100vh;z-index: -1;}
 .main-banner-section .right-side{background-color: #fdfdfd;}
+.main-banner-section .banner-content{width: 50%;}
+.main-banner-section .aside-banner{display: flex; align-items: center;min-height: 100vh;}
 /* Banner Css End */
 
 
 
 /* Responsive Css Start */
-.custom-navigation.navbar-expand-lg .navbar-nav .nav-link{padding-right: 1.5em; padding-left: 1.5em;color: #fff;}
-.custom-navigation.navbar-expand-lg .navbar-nav .nav-link.active{color: #fff;}
+.custom-navigation.navbar-expand-lg .navbar-nav .nav-link{padding-right: 1.5em; padding-left: 1.5em;color: #fff !important;}
+.custom-navigation.navbar-expand-lg .navbar-nav .nav-link.active{color: #fff !important;}
 /* Responsive Css Start */
