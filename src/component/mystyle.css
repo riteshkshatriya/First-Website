@@ -9,7 +9,7 @@ body{
 .text-theme{
     color: var(--primary-color) !important;
 }
-.br-theme{
+.bg-theme{
     background-color: var(--primary-color) !important;
 }
 /* Theme Color Css End*/
@@ -68,3 +68,12 @@ body{
 .custom-navigation.navbar-expand-lg .navbar-nav .nav-link.active{color: #fff !important;}
 .custom-navigation.navbar-expand-lg .nav-right{margin-left: auto;}
 /* Responsive Css Start */
+
+/* Services Section Start */
+.services-main-section{padding: 50px 0px;}
+.services-main-section .common-heading{font-weight: 900; color: #1d1d1f; font-size: 45px;}
+.services-main-section .services-card {padding: 100px 0px;}
+.services-main-section .services-card .icon-services{width: 100px;}
+/* .services-main-section .listing-services .services-main-card:nth-child(2) .services-card, .services-main-section .listing-services .services-main-card:nth-child(4) .services-card{background-color: var(--primary-color);} */
+.services-main-section .listing-services .services-main-card:nth-child(1) .services-card, .services-main-section .listing-services .services-main-card:nth-child(3) .services-card{background-color: #f7f7f7;}
+/* Services Section End */

@@ -71,7 +71,7 @@ function Home() {
 }
 
 function About() {
-  return <h2>About</h2>;
+  return <h2 className="mb-0"></h2>;
 }
 
 function Users() {
