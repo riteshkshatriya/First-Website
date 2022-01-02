@@ -3,10 +3,11 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import arrow from '../images/arrow.png';
 
+
 // import "../../node_modules/react-slick/dist/";
 // import "slick-carousel/slick/slick-theme.css";
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
   Link
@@ -14,30 +15,7 @@ import {
 
 export default function Heading() {
   return (
-    <Router>
       <div>
-        {/* <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-              <button className="btn btn-primary">demo</button>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav> */}
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Routes>
-          <Route path ="/about" element={<About />}/>
-          <Route path ="/users" element={<About />}/> 
-          <Route path ="/" element={<Home />}/>
-        </Routes>
         <nav className="navbar navbar-expand-lg navbar-light  custom-navigation">
           <div className="container">
             <div className="d-flex w-100 align-items-center">
@@ -48,10 +26,22 @@ export default function Heading() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div className="navbar-nav">
-                    <a className="nav-link active" href="#">Home</a>
+                  <li>
+                      <Link className="nav-link" to="">Home</Link>
+                    </li>
+                    <li>
+                    <Link className="nav-link" to="/contact">Portfolio </Link>
+                    </li>
+                    <li>
+                    <Link className="nav-link" to="/services">Services </Link>
+                    </li>
+                    <li>
+                    <Link className="nav-link" to="/contact">Contact </Link>
+                    </li>
+                    {/* <a className="nav-link active" href="#">Home</a>
                     <a className="nav-link" href="#">Portfolio</a>
                     <a className="nav-link" href="#">Services</a>
-                    <a className="nav-link" href="#">Contact</a>
+                    <a className="nav-link" href="#">Contact</a> */}
                   </div>
                 </div>
               </div>
@@ -62,18 +52,6 @@ export default function Heading() {
           </div>
         </nav>
       </div>
-    </Router>
   );
 }
 
-function Home() {
-  return <h2 className="mb-0"></h2>;
-}
-
-function About() {
-  return <h2 className="mb-0"></h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}

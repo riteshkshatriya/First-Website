@@ -1,22 +1,19 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import  '../src/component/mystyle.css';
-import Heading from "./component/header";
-import Banner from "./component/banner";
-import Services from "./component/services";
-import Profile from "./component/profile";
+import App from "./component/App";
+import Contact from "./component/contact/Contact";
 
 
-const App =()=>{
-    return(
-        <div>
-            <Heading />
-            <Banner />
-            <Services />
-            <Profile />
-        </div>
-    )
-}
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Services from "./component/services/Services";
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
+        </Routes>
+    </ BrowserRouter>
+, document.querySelector('#root'))
