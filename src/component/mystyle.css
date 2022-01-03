@@ -20,6 +20,10 @@ body{
 .whatsaap-icon{width: 30px;}
 /* Fixed Whatsapp Css End */
 
+/* Bread Heading Css Start */
+.bread-header .links{text-decoration: none;}
+/* Bread Heading Css End */
+
 /* Common Css Start */
 .common-button{padding: 8px 20px !important; background-color: #fff !important; color: #000 !important; border-radius: 30px !important; border: 1px solid #fff !important;}
 .common-button:hover{background-color: var(--primary-color) !important; color: #fff !important;}

@@ -1,6 +1,11 @@
 import arrow from '../images/arrow.png';
 import banner from '../images/banner.gif';
-
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+    Link
+  } from "react-router-dom";
 
 const Banner =()=>{
     return(
@@ -12,11 +17,11 @@ const Banner =()=>{
                         <div className="banner-content">
                             <span className="banner-sub-heading">THE TECH ZONE</span>
                             <h1 className="main-heading-banner">Best Website Designing & Development Team</h1>
-                            <a href="#" className="common-button btn mt-4">More Information  <img className="arrow-image" src = {arrow} alt="" /> </a>
+                            <a href="#" className="common-button btn mt-4">Contact Us  <img className="arrow-image" src = {arrow} alt="" /> </a>
                             <div className="round"></div>
                         </div>
                         <div className="overlay-button">
-                            <a href="#" class="view-button-banner circle">View</a>
+                            <Link to="/services" class="view-button-banner circle">View</Link>
                         </div>
                     </div>
                     <div className='right-side aside-banner'>

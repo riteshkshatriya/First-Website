@@ -33,10 +33,7 @@ import {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div className="navbar-nav">
                   <li>
-                      <Link className="nav-link" to="">Home</Link>
-                    </li>
-                    <li>
-                    <Link className="nav-link" to="/contact">Portfolio </Link>
+                      <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li>
                     <Link className="nav-link" to="/services">Services </Link>

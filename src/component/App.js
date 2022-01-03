@@ -21,7 +21,7 @@ export default function App() {
             <Services />
             <Skills />
             <Searching />
-            <Team />
+            {/* <Team /> */}
             <Workprocess />
             <Contacthome/>
             <Footer/>
