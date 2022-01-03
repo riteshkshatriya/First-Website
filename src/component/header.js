@@ -2,7 +2,7 @@ import React from "react";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import arrow from '../images/arrow.png';
-
+import {useState, useEffect} from 'react'
 
 // import "../../node_modules/react-slick/dist/";
 // import "slick-carousel/slick/slick-theme.css";
@@ -13,9 +13,15 @@ import {
   Link
 } from "react-router-dom";
 
-export default function Heading() {
+      export default function Heading() {
+        const [scroll, setScroll] = useState(false);
+      useEffect(() => {
+        window.addEventListener("scroll", () => {
+          setScroll(window.scrollY > 50);
+        });
+      }, []);
   return (
-      <div>
+      <div className={`main-navigation ${scroll ? "fixed" : "fixed-not"}`}>
         <nav className="navbar navbar-expand-lg navbar-light  custom-navigation">
           <div className="container">
             <div className="d-flex w-100 align-items-center">
@@ -54,4 +60,5 @@ export default function Heading() {
       </div>
   );
 }
+
 

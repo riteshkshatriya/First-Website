@@ -15,9 +15,9 @@ export default function Team() {
                 </div>
                 <div className="row">
                     <Team_member_card name="Rohit Prajapati" designation="Full Stack Web Developer" images = {rohit} />
-                    <Team_member_card name="Ritesh Kshatriya" designation="Web Designer"  images = {ritesh} />
+                    <Team_member_card name="Ritesh Kshatriya" designation="Web Developer"  images = {ritesh} />
                     <Team_member_card name="Nirav Zalavadiya" designation="WordPress Developer"  images = {nirav} />
-                    <Team_member_card name="Chintan Prajapati" designation="Frontend Developer"  images = {chintan} />
+                    <Team_member_card name="Chintan Prajapati" designation="Full Stack Web Developer"  images = {chintan} />
                 </div>
             </div>
         </section>

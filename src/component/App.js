@@ -10,6 +10,7 @@ import Team from "./Team";
 import Workprocess from './work-process/Workprocess';
 import Contacthome from './contact/Contacthome';
 import Whatsaap from './Whatsaap';
+import Footer from './Footer';
 
 export default function App() {
     return (
@@ -23,6 +24,7 @@ export default function App() {
             <Team />
             <Workprocess />
             <Contacthome/>
+            <Footer/>
         </>
     )
 }
